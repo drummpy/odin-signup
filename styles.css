@@ -14,6 +14,12 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+p {
+  font-size: 1.25em;
+  padding: 0 7em 3em 2em;
+  font-weight: bold;
+}
+
 .wrapper {
   display: flex;
   flex-basis: 1200px;
@@ -74,19 +80,29 @@ body {
   max-height: 40vh;
 }
 
-.hero p {
-  font-size: 1.25em;
-  padding: 0 7em 3em 3em;
-  font-weight: bold;
-}
-
-.form {
+.middle {
   display: flex;
+  flex-direction: column;
   background-color: white;
   flex: auto;
   box-shadow: -1px 8px 15px 0px #d6d6d6;
   position: relative;
   z-index: 1;
+  padding-top: 1em;
+}
+
+.middle p {
+  padding-bottom: 1em;
+}
+
+.form-wrapper {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex: auto;
+  background-color: green;
 }
 
 .submit {
