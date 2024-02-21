@@ -126,8 +126,46 @@ fieldset {
   font-size: 0.9em;
 }
 
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row input[type="password"]:focus {
+  border: 1px solid green;
+  outline: green;
+  box-shadow: -1px 8px 15px 0px #d6d6d6;
+}
+
 .submit {
   display: flex;
+  flex-direction: column;
   background-color: #efefef;
   flex: auto;
+  padding: 2.5em;
+}
+
+.submit p {
+  padding: 2em 0;
+}
+
+.submit a {
+  color: #664200;
+  text-decoration: none;
+}
+
+button {
+  font-size: 1.15em;
+  font-weight: bold;
+  width: 13em;
+  background-color: #664200;
+  color: #ffff;
+  border: none;
+  border-radius: 7px;
+  padding: 1em;
+}
+
+button:hover {
+  background: #794e00;
+}
+
+button:active {
+  background-color: #583a00;
 }
